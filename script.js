@@ -6,11 +6,11 @@ async function generateTitleAndTags() {
   titleOutput.innerText = 'Generating...';
   tagsOutput.innerText = '';
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
+  const response = await fetch("https://api.openai.com/v1/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer YOUR_OPENAI_API_KEY"
+      "Authorization": "Bearer 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"
     },
     body: JSON.stringify({
       model: "text-davinci-003",
